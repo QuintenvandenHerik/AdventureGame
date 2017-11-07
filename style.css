@@ -1,0 +1,948 @@
+* {
+	margin: 0;
+	padding: 0;
+	cursor: url('cursor.cur'), auto;
+	font-family: 'Pirata One', cursive;
+	text-shadow: 3px 3px 5px black;
+}
+
+body {
+	background-color: #010101;
+}
+
+h1 {
+	background-image: url(UI11.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.containers{
+	visibility: hidden;
+}
+
+#craftingPannel {
+	height: 682px;
+	width: 1344px;
+	background-image: url(UI14.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+
+#craftItems {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#craftItem1 {
+	width: 51px;
+	height: 51px;
+}
+
+#craftItem2 {
+	width: 51px;
+	height: 51px;
+}
+
+#craftItem3 {
+	width: 51px;
+	height: 51px;
+}
+
+[name=inventorySlots] {
+	width:51px;
+	height:51px;
+	display: inline-block;
+	background-color: transparent;
+	margin-bottom: 12.8px;
+	margin-right: 16.4px;
+	background-size: contain;
+}
+
+#inventoryPannel {
+	width: 476px;
+	position: absolute;
+	top: 200px;
+	left: 700px;
+	visibility: hidden;
+}
+
+#recipe1 {
+	width: 250px;
+	height: 55px;
+	margin-left: 25px;
+	background-image: url(recipe1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#recipe2 {
+	width: 250px;
+	height: 55px;
+	margin-left: 25px;
+	background-image: url(recipe2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#recipe3 {
+	width: 250px;
+	height: 55px;
+	margin-left: 25px;
+	background-image: url(recipe3.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#recipe4 {
+	width: 250px;
+	height: 55px;
+	margin-left: 25px;
+	background-image: url(recipe4.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#recipe5 {
+	width: 250px;
+	height: 55px;
+	margin-left: 25px;
+	background-image: url(recipe5.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#recipe6 {
+	width: 250px;
+	height: 55px;
+	margin-left: 25px;
+	background-image: url(recipe6.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#recipe7 {
+	width: 250px;
+	height: 55px;
+	margin-left: 25px;
+	background-image: url(recipe7.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#recipeContainer1 {
+	width: 460px;
+	height: 55px;
+	position: relative;
+	top: 110px;
+	left: 700px;
+}
+
+#recipeContainer2 {
+	width: 460px;
+	height: 55px;
+	position: relative;
+	top: 125px;
+	left: 700px;
+}
+
+#recipeContainer3 {
+	width: 460px;
+	height: 55px;
+	position: relative;
+	top: 138px;
+	left: 700px;
+}
+
+#recipeContainer4 {
+	width: 460px;
+	height: 55px;
+	position: relative;
+	top: 151px;
+	left: 700px;
+}
+
+#recipeContainer5 {
+	width: 460px;
+	height: 55px;
+	position: relative;
+	top: 164px;
+	left: 700px;
+}
+
+#recipeContainer6 {
+	width: 460px;
+	height: 55px;
+	position: relative;
+	top: 177px;
+	left: 700px;
+}
+
+#recipeContainer7 {
+	width: 460px;
+	height: 55px;
+	position: relative;
+	top: 190px;
+	left: 700px;
+}
+
+
+#closeCraftingPannel {
+	width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 26px;
+    left: 1125px;
+    background-color: transparent;
+}
+
+#backgroundStart {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonEntrance.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#backgroundRoom1 {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonHallway.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#backgroundRoom2 {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonPrison.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#backgroundRoom3 {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonCell.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#backgroundRoom4 {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonStairs.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#backgroundRoom5 {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonDwarfHallway.png);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#backgroundRoom6 {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonDwarfAltar.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#backgroundRoom7 {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonTunnel.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#backgroundRoom8 {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonTCleavage.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#backgroundRoom9 {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonCabin.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#backgroundRoom10 {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonLeftHall.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#backgroundRoom11 {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonRightHall.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#backgroundRoom12 {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(dungeonSewer.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#loadingScreen {
+	position: absolute;
+	background-image: url(loadingScreen.gif);
+	background-repeat: no-repeat;
+	background-size: contain;
+	top: 50vh;
+	left: 50vw;
+	width: 30vw;
+	height: 40vh;
+	transform: translate(-50%, -50%);
+}
+
+#title {
+	font-size: 80px;
+	text-align: center;
+	color: #ff0000;
+    width: 700px;
+    position: absolute;
+    /* Standard syntax */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    transition: font-size 0.5s, color 0.5s;
+}
+
+@keyframes example {
+    0%   {left:9.114583333333333vw; top:25vh; transform: rotateZ(00deg);}
+    25%  {left:13.02083333333333vw; top:26.38888888888889vh; transform: rotateZ(10deg);}
+    50%  {left:13.02083333333333vw; top:25vh; transform: rotateZ(00deg);}
+    75%  {left:9.114583333333333vw; top:26.38888888888889vh; transform: rotateZ(-10deg);}
+    100% {left:9.114583333333333vw; top:25vh; transform: rotateZ(00deg);}
+}
+
+#title:hover {
+	font-size: 100px;
+	color: white;
+}
+
+#startGame {
+	position: absolute;
+	top: 46.2962962962963vh;
+	left: 75vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+}
+
+#craft {
+	position: absolute;
+	top: 70vh;
+	left: 35vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+}
+
+#UIbuttons {
+	margin-top: 15vh;
+}
+
+#UIBag {
+	width: 7vw;
+	border: none;
+	height: 7vw;
+	display: block;
+	background-image: url(UI9.png);
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 1vw;
+	transition: width 0.3s, height 0.3s, margin-bottom 0.3s;
+}
+
+#UIBag:hover {
+	width:8vw;
+	height:8vw;
+	margin-bottom: 0vw;
+}
+
+#UIBook {
+	width: 7vw;
+	border: none;
+	height: 7vw;
+	display: block;
+	background-image: url(UI7.png);
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 1vw;
+	transition: width 0.3s, height 0.3s, margin-bottom 0.3s;
+}
+
+#UIBook:hover {
+	width:8vw;
+	height:8vw;
+	margin-bottom: 0vw;
+}
+
+#UIGear {
+	width: 7vw;
+	border: none;
+	height: 7vw;
+	display: block;
+	background-image: url(UI6.png);
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 1vw;
+	transition: width 0.3s, height 0.3s, margin-bottom 0.3s;
+}
+
+#UIGear:hover {
+	width:8vw;
+	height:8vw;
+	margin-bottom: 0vw;
+}
+
+#UIObjective {
+	width: 7vw;
+	border: none;
+	height: 7vw;
+	display: block;
+	background-image: url(UI8.png);
+	background-color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 1vw;
+	transition: width 0.3s, height 0.3s, margin-bottom 0.3s;
+}
+
+#UIObjective:hover {
+	width:8vw;
+	height:8vw;
+	margin-bottom: 0vw;
+}
+
+#toolBar {
+	position: absolute;
+	width: 10vw;
+	top: 5vh;
+	height: 90vh;
+	background-image: url(toolBar.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: -1px;
+	visibility: hidden;
+}
+
+#buttonToRoom2 {
+	position: absolute;
+	top: 50vh;
+	left: 20vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(NextButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(90deg);
+}
+
+#returnToRoom1 {
+	position: absolute;
+	top: 70vh;
+	left: 10vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+}
+
+#buttonToRoom3 {
+	position: absolute;
+	top: 25vh;
+	left: 68vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+}
+
+#returnToRoom2a {
+	position: absolute;
+	top: 70vh;
+	left: 10vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+}
+
+#returnToRoom2b {
+	position: absolute;
+	top: 70vh;
+	left: 10vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+}
+
+#buttonToRoom4 {
+	position: absolute;
+	top: 40vh;
+	left: 80vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(NextButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+}
+
+#returnToRoom3 {
+	position: absolute;
+	top: 72vh;
+	left: 10vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(NextButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(60deg);
+}
+
+#buttonToRoom5 {
+	position: absolute;
+	top: 60vh;
+	left: 38vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(NextButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(20deg);
+}
+
+#returnToRoom4 {
+	position: absolute;
+	top: 72vh;
+	left: 50vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(NextButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(47deg);
+}
+
+#buttonToRoom6 {
+	position: absolute;
+	top: 45vh;
+	left: 32vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(NextButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(10deg);
+}
+
+#returnToRoom5 {
+	position: absolute;
+	top: 70vh;
+	left: 73vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(300deg);
+}
+
+#buttonToRoom7 {
+	position: absolute;
+	top: 35vh;
+	left: 34vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(-10deg);
+}
+
+#returnToRoom7a {
+	position: absolute;
+	top: 70vh;
+	left: 73vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(300deg);
+}
+
+#returnToRoom7b {
+	position: absolute;
+	top: 70vh;
+	left: 73vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(300deg);
+}
+
+#buttonToRoom8 {
+	position: absolute;
+	top: 38vh;
+	left: 33vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+}
+
+#returnToRoom8a {
+	position: absolute;
+	top: 70vh;
+	left: 13vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(320deg);
+}
+
+#returnToRoom8b {
+	position: absolute;
+	top: 70vh;
+	left: 73vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(NextButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(50deg);
+}
+
+#buttonToRoom9 {
+	position: absolute;
+	top: 46vh;
+	left: 50vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(NextButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(20deg);
+}
+
+#buttonToRoom10 {
+	position: absolute;
+	top: 38vh;
+	left: 33vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+}
+
+#buttonToRoom11 {
+	position: absolute;
+	top: 38vh;
+	left: 70vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(NextButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+}
+
+#returnToRoom11 {
+	position: absolute;
+	top: 10vh;
+	left: 70vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(60deg);
+}
+
+#buttonToRoom12 {
+	position: absolute;
+	top: 40vh;
+	left: 50vw;
+	width: 200px;
+	height: 200px;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: none;
+	background-image: url(LastButton.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	color: white;
+	transform: rotateZ(330deg);
+}
+
+.nameRoom {
+	text-align: center;
+	font-size: 40px;
+	color: red;
+	position: absolute;
+	top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    padding-top:6vh;
+    padding-bottom:6vh;
+}
+
+#greenOrb {
+	position: absolute;
+	top: 70vh;
+	left: 35vw;
+	border: none;
+	background-image: url(greenOrb.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	visibility: hidden;
+}
+
+#blueOrb {
+	position: absolute;
+	top: 66vh;
+	left: 45vw;
+	border: none;
+	background-image: url(blueOrb.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	visibility: hidden;
+}

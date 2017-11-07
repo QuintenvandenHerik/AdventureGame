@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Pirata+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Adventure Game</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="loadingScreen"></div>
+	<div id="containerRoom0" class="containers">
+		<div id="backgroundStart"></div>
+		<div id="title">The Forbidden Tomb</div>
+		<button id="startGame">START</button>
+	</div>
+	<div id="containerRoom1" class="containers">
+		<div id="backgroundRoom1"></div>
+		<h1 class="nameRoom">Hallway</h1>
+		<button id="buttonToRoom2">Prison</button>
+	</div>
+	<div id="containerRoom2" class="containers">
+		<div id="backgroundRoom2"></div>
+		<h1 class="nameRoom">Prison</h1>
+		<button id="returnToRoom1">Go Back</button>
+		<button id="buttonToRoom3">Cell</button>
+		<button id="buttonToRoom4">Stairs</button>
+	</div>
+	<div id="containerRoom3" class="containers">
+		<div id="backgroundRoom3"></div>
+		<h1 class="nameRoom">Cell</h1>
+		<button id="returnToRoom2a">Go Back</button>
+		<button id="buttonToRoom7">Tunnel</button>
+	</div>
+	<div id="containerRoom4" class="containers">
+		<div id="backgroundRoom4"></div>
+		<h1 class="nameRoom">Stairs</h1>
+		<button id="returnToRoom2b">Go Back</button>
+		<button id="buttonToRoom5">Dwarf Hall</button>
+	</div>
+	<div id="containerRoom5" class="containers">
+		<div id="backgroundRoom5"></div>
+		<h1 class="nameRoom">Dwarf Hallway</h1>
+		<button id="returnToRoom4">Go Back</button>
+		<button id="buttonToRoom6">Dwarf Altar</button>
+	</div>
+	<div id="containerRoom6" class="containers">
+		<div id="backgroundRoom6"></div>
+		<h1 class="nameRoom">Dwarf Altar</h1>
+		<button id="returnToRoom5">Go Back</button>
+	</div>
+	<div id="containerRoom7" class="containers">
+		<div id="backgroundRoom7"></div>
+		<h1 class="nameRoom">Tunnel</h1>
+		<button id="returnToRoom3">Go Back</button>
+		<button id="buttonToRoom8">T-Cleavage</button>
+		<button id="buttonToRoom9">Cabin</button>
+	</div>
+	<div id="containerRoom8" class="containers">
+		<div id="backgroundRoom8"></div>
+		<h1 class="nameRoom">T-Cleavage</h1>
+		<button id="returnToRoom7a">Go Back</button>
+		<button id="buttonToRoom10">Left</button>
+		<button id="buttonToRoom11">Right</button>
+	</div>
+	<div id="containerRoom9" class="containers">
+		<div id="backgroundRoom9"></div>
+		<h1 class="nameRoom">Cabin</h1>
+		<button id="returnToRoom7b">Go Back</button>
+		<button id="craft">Craft</button>		
+	</div>
+	<div id="containerRoom10" class="containers">
+		<div id="backgroundRoom10"></div>
+		<h1 class="nameRoom">Left Hall</h1>
+		<button id="returnToRoom8a">Go Back</button>
+	</div>
+	<div id="containerRoom11" class="containers">
+		<div id="backgroundRoom11"></div>
+		<h1 class="nameRoom">Right Hall</h1>
+		<button id="returnToRoom8b">Go Back</button>
+		<button id="buttonToRoom12">Sewer</button>
+	</div>
+	<div id="containerRoom12" class="containers">
+		<div id="backgroundRoom12"></div>
+		<h1 class="nameRoom">Sewer</h1>
+		<button id="returnToRoom11">Go Back</button>
+	</div>
+
+	<button id="greenOrb"></button>
+	<button id="blueOrb"></button>
+	<div id="inventoryPannel"></div>
+	<div id="craftingPannel">
+		<button id="closeCraftingPannel"></button>
+		<div id="craftItems">
+			<div id="craftItem1"></div>
+			<div id="craftItem2"></div>
+			<div id="craftItem3"></div>
+		</div>
+	</div>
+	<div id="toolBar">
+		<div id="UIbuttons">
+			<button id="UIBag"></button>
+			<button id="UIBook"></button>
+			<button id="UIGear"></button>
+			<button id="UIObjective"></button>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
