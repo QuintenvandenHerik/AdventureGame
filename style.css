@@ -4,6 +4,7 @@
 	cursor: url('cursor.cur'), auto;
 	font-family: 'Pirata One', cursive;
 	text-shadow: 3px 3px 5px black;
+	outline:0;
 }
 
 body {
@@ -17,7 +18,7 @@ h1 {
 	background-repeat: no-repeat;
 }
 
-.containers{
+.containers {
 	visibility: hidden;
 }
 
@@ -74,6 +75,21 @@ h1 {
 	visibility: hidden;
 }
 
+.craft {
+	width: 127.4px;
+	height: 45px;
+	background-image: url(UI7a.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	border: none;
+}
+
+.craft:active {
+	background-image: url(UI7b.png);
+}
+
 #recipe1 {
 	width: 250px;
 	height: 55px;
@@ -81,6 +97,7 @@ h1 {
 	background-image: url(recipe1.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	display: inline-block;
 }
 
 #recipe2 {
@@ -90,6 +107,7 @@ h1 {
 	background-image: url(recipe2.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	display: inline-block;
 }
 
 #recipe3 {
@@ -99,6 +117,7 @@ h1 {
 	background-image: url(recipe3.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	display: inline-block;
 }
 
 #recipe4 {
@@ -108,6 +127,7 @@ h1 {
 	background-image: url(recipe4.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	display: inline-block;
 }
 
 #recipe5 {
@@ -117,15 +137,17 @@ h1 {
 	background-image: url(recipe5.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	display: inline-block;
 }
 
-#recipe6 {
+/*#recipe6 {
 	width: 250px;
 	height: 55px;
 	margin-left: 25px;
 	background-image: url(recipe6.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	display: inline-block;
 }
 
 #recipe7 {
@@ -135,7 +157,8 @@ h1 {
 	background-image: url(recipe7.png);
 	background-size: contain;
 	background-repeat: no-repeat;
-}
+	display: inline-block;
+}*/
 
 #recipeContainer1 {
 	width: 460px;
@@ -143,54 +166,61 @@ h1 {
 	position: relative;
 	top: 110px;
 	left: 700px;
+	display: block;
 }
 
 #recipeContainer2 {
 	width: 460px;
 	height: 55px;
 	position: relative;
-	top: 125px;
+	top: 123px;
 	left: 700px;
+	display: block;
 }
 
 #recipeContainer3 {
 	width: 460px;
 	height: 55px;
 	position: relative;
-	top: 138px;
+	top: 135px;
 	left: 700px;
+	display: block;
 }
 
 #recipeContainer4 {
 	width: 460px;
 	height: 55px;
 	position: relative;
-	top: 151px;
+	top: 148px;
 	left: 700px;
+	display: block;
 }
 
 #recipeContainer5 {
 	width: 460px;
 	height: 55px;
 	position: relative;
-	top: 164px;
+	top: 161px;
 	left: 700px;
+	display: block;
 }
 
 #recipeContainer6 {
 	width: 460px;
 	height: 55px;
 	position: relative;
-	top: 177px;
+	top: 174px;
 	left: 700px;
+	display: block;
 }
 
 #recipeContainer7 {
 	width: 460px;
 	height: 55px;
 	position: relative;
-	top: 190px;
+	top: 185px;
 	left: 700px;
+	display: block;
 }
 
 
@@ -205,10 +235,9 @@ h1 {
     background-color: transparent;
 }
 
-#backgroundStart {
+.backgroundRooms {
 	height: 100vh;
 	width: 100vw;
-	background-image: url(dungeonEntrance.jpg);
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -216,162 +245,88 @@ h1 {
 	position: absolute;
 	top: 0px;
 	left: 0px;
+}
+
+#backgroundStart {
+	background-image: url(dungeonEntrance.jpg);
 }
 
 #backgroundRoom1 {
-	height: 100vh;
-	width: 100vw;
 	background-image: url(dungeonHallway.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 
 #backgroundRoom2 {
-	height: 100vh;
-	width: 100vw;
 	background-image: url(dungeonPrison.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 
 #backgroundRoom3 {
-	height: 100vh;
-	width: 100vw;
 	background-image: url(dungeonCell.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 
 #backgroundRoom4 {
-	height: 100vh;
-	width: 100vw;
 	background-image: url(dungeonStairs.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 
 #backgroundRoom5 {
-	height: 100vh;
-	width: 100vw;
 	background-image: url(dungeonDwarfHallway.png);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 
 #backgroundRoom6 {
-	height: 100vh;
-	width: 100vw;
 	background-image: url(dungeonDwarfAltar.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 
 #backgroundRoom7 {
-	height: 100vh;
-	width: 100vw;
 	background-image: url(dungeonTunnel.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 
 #backgroundRoom8 {
-	height: 100vh;
-	width: 100vw;
 	background-image: url(dungeonTCleavage.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 
 #backgroundRoom9 {
-	height: 100vh;
-	width: 100vw;
 	background-image: url(dungeonCabin.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 
 #backgroundRoom10 {
-	height: 100vh;
-	width: 100vw;
 	background-image: url(dungeonLeftHall.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 
 #backgroundRoom11 {
-	height: 100vh;
-	width: 100vw;
 	background-image: url(dungeonRightHall.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 
 #backgroundRoom12 {
-	height: 100vh;
-	width: 100vw;
 	background-image: url(dungeonSewer.jpg);
-	background-repeat:no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	position: absolute;
-	top: 0px;
-	left: 0px;
+}
+
+#backgroundRoom13 {
+	background-image: url(dungeonLowerBridge.jpg);
+}
+
+#backgroundRoom14 {
+	background-image: url(dungeonUpperBridge.jpg);
+}
+
+#backgroundRoom15 {
+	background-image: url(dungeonUpperBridgeStairs.jpg);
+}
+
+#backgroundRoom16 {
+	background-image: url(galaxy.gif);
+	background-position: -15px;
+	transform: rotateX(180deg);
+}
+
+#backgroundGrassPlanet {
+	background-image: url(grassBackground.jpg);
+}
+
+#backgroundLeafPlanet {
+	background-image: url(leafBackground.jpg);
+}
+
+#backgroundShroomPlanet {
+	background-image: url(shroomBackground.jpg);
 }
 
 #loadingScreen {
@@ -392,7 +347,6 @@ h1 {
 	color: #ff0000;
     width: 700px;
     position: absolute;
-    /* Standard syntax */
     animation-name: example;
     animation-duration: 4s;
     animation-timing-function: linear;
@@ -414,36 +368,29 @@ h1 {
 	color: white;
 }
 
-#startGame {
+.roomButtons {
 	position: absolute;
-	top: 46.2962962962963vh;
-	left: 75vw;
 	width: 200px;
 	height: 200px;
 	padding-right: 10px;
 	border-radius: 50%;
 	border: none;
-	background-image: url(LastButton.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-size: 35px;
 	color: white;
 }
 
+#startGame {
+	top: 46.2962962962963vh;
+	left: 75vw;
+	background-image: url(LastButton.jpg);
+}
+
 #craft {
-	position: absolute;
 	top: 70vh;
 	left: 35vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 }
 
 #UIbuttons {
@@ -539,369 +486,252 @@ h1 {
 }
 
 #buttonToRoom2 {
-	position: absolute;
 	top: 50vh;
 	left: 20vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(NextButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(90deg);
 }
 
 #returnToRoom1 {
-	position: absolute;
 	top: 70vh;
 	left: 10vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 }
 
 #buttonToRoom3 {
-	position: absolute;
 	top: 25vh;
 	left: 68vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 }
 
 #returnToRoom2a {
-	position: absolute;
 	top: 70vh;
 	left: 10vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 }
 
 #returnToRoom2b {
-	position: absolute;
 	top: 70vh;
 	left: 10vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 }
 
 #buttonToRoom4 {
-	position: absolute;
 	top: 40vh;
 	left: 80vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(NextButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 }
 
 #returnToRoom3 {
-	position: absolute;
 	top: 72vh;
 	left: 10vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(NextButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(60deg);
 }
 
 #buttonToRoom5 {
-	position: absolute;
 	top: 60vh;
 	left: 38vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(NextButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(20deg);
 }
 
 #returnToRoom4 {
-	position: absolute;
 	top: 72vh;
 	left: 50vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(NextButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(47deg);
 }
 
 #buttonToRoom6 {
-	position: absolute;
 	top: 45vh;
 	left: 32vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(NextButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(10deg);
 }
 
 #returnToRoom5 {
-	position: absolute;
 	top: 70vh;
 	left: 73vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(300deg);
 }
 
 #buttonToRoom7 {
-	position: absolute;
 	top: 35vh;
 	left: 34vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(-10deg);
 }
 
 #returnToRoom7a {
-	position: absolute;
 	top: 70vh;
 	left: 73vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(300deg);
 }
 
 #returnToRoom7b {
-	position: absolute;
 	top: 70vh;
 	left: 73vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(300deg);
 }
 
 #buttonToRoom8 {
-	position: absolute;
 	top: 38vh;
 	left: 33vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 }
 
 #returnToRoom8a {
-	position: absolute;
 	top: 70vh;
 	left: 13vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(320deg);
 }
 
 #returnToRoom8b {
-	position: absolute;
 	top: 70vh;
 	left: 73vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(NextButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(50deg);
 }
 
 #buttonToRoom9 {
-	position: absolute;
 	top: 46vh;
 	left: 50vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(NextButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(20deg);
 }
 
 #buttonToRoom10 {
-	position: absolute;
 	top: 38vh;
 	left: 33vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 }
 
 #buttonToRoom11 {
-	position: absolute;
 	top: 38vh;
 	left: 70vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(NextButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 }
 
 #returnToRoom11 {
-	position: absolute;
 	top: 10vh;
 	left: 70vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(60deg);
 }
 
 #buttonToRoom12 {
-	position: absolute;
 	top: 40vh;
 	left: 50vw;
-	width: 200px;
-	height: 200px;
-	padding-right: 10px;
-	border-radius: 50%;
-	border: none;
 	background-image: url(LastButton.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 35px;
-	color: white;
 	transform: rotateZ(330deg);
+}
+
+#returnToRoom12 {
+	top: 70vh;
+	left: 15vw;
+	background-image: url(LastButton.jpg);
+	transform: rotateZ(-20deg);
+}
+
+#buttonToRoom13 {
+	top: 40vh;
+	left: 69vw;
+	background-image: url(LastButton.jpg);
+}
+
+#returnToRoom13 {
+	top: 60vh;
+	left: 70vw;
+	background-image: url(LastButton.jpg);
+	transform: rotateZ(-70deg);
+}
+
+#buttonToRoom14 {
+	top: 10vh;
+	left: 70vw;
+	background-image: url(LastButton.jpg);
+	transform: rotateZ(60deg);
+}
+
+#returnToRoom14 {
+	top: 60vh;
+	left: 70vw;
+	background-image: url(LastButton.jpg);
+	transform: rotateZ(-70deg);
+}
+
+#buttonToRoom15 {
+	top: 70vh;
+	left: 10vw;
+	background-image: url(LastButton.jpg);
+	transform: rotateZ(15deg);
+}
+
+#returnToRoom15 {
+	top: 5vh;
+	left: 5vw;
+	background-image: url(LastButton.jpg);
+}
+
+#buttonInvestigate {
+	top: 45vh;
+	left: 42vw;
+	background-image: url(NextButton.jpg);
+}
+
+#buttonPlanet1 {
+	background-image: url(grassPlanet.png);
+	top: 80vh;
+	left: 43.75vw;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+#buttonPlanet2 {
+	background-image: url(leafPlanet.png);
+	top: 61.94vh;
+	left: 35.68vw;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+#buttonPlanet3 {
+	background-image: url(shroomPlanet.png);
+	top: 40.19vh;
+	left: 38.54vw;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+#buttonPlanet4 {
+	background-image: url(oceanPlanet.png);
+	top: 30vh;
+	left: 50vw;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+#buttonPlanet5 {
+	background-image: url(desertPlanet.png);
+	top: 40.19vh;
+	left: 61.46vw;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+#buttonPlanet6 {
+	background-image: url(magmaPlanet.png);
+	top: 61.94vh;
+	left: 64.32vw;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+#buttonPlanet7 {
+	background-image: url(steamPunkPlanet.png);
+	top: 80vh;
+	left: 56.25vw;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
 }
 
 .nameRoom {
@@ -930,6 +760,24 @@ h1 {
 	height: 50px;
 	background-color: transparent;
 	visibility: hidden;
+	opacity: 0.5;
+}
+
+#greenFeathers {
+	position: absolute;
+	top: 55vh;
+	left: 43vw;
+	border: none;
+	background-image: url(greenFeathers.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	visibility: hidden;
+	opacity: 0.5;
+	transform: rotate(45deg);
 }
 
 #blueOrb {
@@ -945,4 +793,21 @@ h1 {
 	height: 50px;
 	background-color: transparent;
 	visibility: hidden;
+	opacity: 0.5;
+}
+
+#blueFeathers {
+	position: absolute;
+	top: 70vh;
+	left: 35vw;
+	border: none;
+	background-image: url(blueFeathers.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	font-size: 35px;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	visibility: hidden;
+	opacity: 0.5;
 }
