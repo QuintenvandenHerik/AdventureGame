@@ -2,6 +2,7 @@ var items = 0;
 var crafting = false;
 var greenOrb = false;
 var blueOrb = false;
+var currentPlanet = "None";
 var room0 = document.getElementById("containerRoom0");
 var room1 = document.getElementById("containerRoom1");
 var room2 = document.getElementById("containerRoom2");
@@ -52,7 +53,7 @@ function start() {
 	}, 7600);
 }
 
-window.onload = goToRoom16//start;
+window.onload = goToRoom16;//start;
 
 //Hallway
 function goToRoom1() {
@@ -183,39 +184,53 @@ function goToRoom16() {
 function goToPlanet1() {
 	planet1.style.visibility = "visible";
 	room16.style.visibility = "hidden";
+	currentPlanet = "grass";
 }
 //Planet
 function goToPlanet2() {
 	planet2.style.visibility = "visible";
 	room16.style.visibility = "hidden";
+	currentPlanet = "leaf";
 }
 //Planet
 function goToPlanet3() {
 	planet3.style.visibility = "visible";
 	room16.style.visibility = "hidden";
+	currentPlanet = "shroom";
 }
 //Planet
 function goToPlanet4() {
 	planet4.style.visibility = "visible";
 	room16.style.visibility = "hidden";
+	currentPlanet = "ocean";
 }
 //Planet
 function goToPlanet5() {
 	planet5.style.visibility = "visible";
 	room16.style.visibility = "hidden";
+	currentPlanet = "desert";
 }
 //Planet
 function goToPlanet6() {
 	planet6.style.visibility = "visible";
 	room16.style.visibility = "hidden";
+	currentPlanet = "magma";
 }
 //Planet
 function goToPlanet7() {
 	planet7.style.visibility = "visible";
 	room16.style.visibility = "hidden";
+	currentPlanet = "steampunk";
 }
 
-
+function battleBoss() {
+	var planet = currentPlanet + "Planet";
+	var currentBossImage = currentPlanet + "Boss.png";
+	var currentBossBackgroundImage = currentPlanet + "BattleBackground.jpg"
+	document.getElementById(planet).style.visibility = "hidden";
+	document.getElementById("boss").src = currentBossImage;
+	document.getElementById("arenaContainer").style.backgroundImage = currentBossBackgroundImage;
+}
 
 function craftingPannel() {
 	document.getElementById("craftingPannel").style.visibility = "visible";
@@ -338,6 +353,13 @@ document.getElementById("returnToRoom12").addEventListener("click", goToRoom12);
 document.getElementById("returnToRoom13").addEventListener("click", goToRoom13);
 document.getElementById("returnToRoom14").addEventListener("click", goToRoom14);
 document.getElementById("returnToRoom15").addEventListener("click", goToRoom15);
+function addEventListenerByClass(className, event, fn) {
+    var list = document.getElementsByClassName(className);
+    for (var i = 0, len = list.length; i < len; i++) {
+        list[i].addEventListener(event, fn, false);
+    }
+}
+addEventListenerByClass('bossContainers', 'click', battleBoss);
 document.getElementById("closeCraftingPannel").addEventListener("click", closeCraftingPannel);
 document.getElementById("greenOrb").addEventListener("click", pickUpGreenOrb);
 document.getElementById("blueOrb").addEventListener("click", pickUpBlueOrb);

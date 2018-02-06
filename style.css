@@ -18,7 +18,7 @@ h1 {
 	background-repeat: no-repeat;
 }
 
-.containers {
+.roomContainers {
 	visibility: hidden;
 }
 
@@ -319,6 +319,7 @@ h1 {
 
 #backgroundGrassPlanet {
 	background-image: url(grassBackground.jpg);
+	background-position: top;
 }
 
 #backgroundLeafPlanet {
@@ -327,6 +328,26 @@ h1 {
 
 #backgroundShroomPlanet {
 	background-image: url(shroomBackground.jpg);
+	background-position: bottom;
+}
+
+#backgroundOceanPlanet {
+	background-image: url(oceanBackground.jpg);
+	background-position: bottom;
+}
+
+#backgroundDesertPlanet {
+	background-image: url(desertBackground.jpg);
+	background-position: top;
+}
+
+#backgroundMagmaPlanet {
+	background-image: url(magmaBackground.jpg);
+	background-position: bottom;
+}
+
+#backgroundSteampunkPlanet {
+	background-image: url(steampunkBackground.jpg);
 }
 
 #loadingScreen {
@@ -810,4 +831,129 @@ h1 {
 	background-color: transparent;
 	visibility: hidden;
 	opacity: 0.5;
+}
+
+.bossHealthBar {
+	width: 312px;
+	height: 75px;
+	position: absolute;
+    transform: translate(-50%, 0%);
+}
+
+.redBar {
+	width: 312px;
+	height: 75px;
+	background-image: url(redBar.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.redHealthBar {
+	margin: 5px;
+	width: 302px;
+	height: 65px;
+	background-image: url(redHealthBar.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	top: -75px;
+	left: 0px;
+}
+
+#grassBossContainer {
+	position: absolute;
+	top: 20vh;
+	left: 35vw;
+}
+
+#grassBoss {
+	width: auto;
+	height: 480px;
+	position: absolute;
+	top: 100px;
+	transform: translate(-50%, 0%);
+}
+
+#leafBossContainer {
+	position: absolute;
+	top: 10vh;
+	left: 80vw;
+}
+
+#leafBoss {
+	width: auto;
+	height: 480px;
+	position: absolute;
+	top: 100px;
+	transform: translate(-50%, 0%);
+}
+
+#shroomBossContainer {
+	position: absolute;
+	top: 27vh;
+	left: 65vw;
+}
+
+#shroomBoss {
+	width: auto;
+	height: 480px;
+	position: absolute;
+	top: 100px;
+	transform: translate(-50%, 0%);
+}
+
+#oceanBossContainer {
+	position: absolute;
+	top: 15vh;
+	left: 30vw;
+}
+
+#oceanBoss {
+	width: auto;
+	height: 480px;
+	position: absolute;
+	top: 100px;
+	transform: translate(-50%, 0%);
+}
+
+#desertBossContainer {
+	position: absolute;
+	top: 35vh;
+	left: 80vw;
+}
+
+#desertBoss {
+	width: auto;
+	height: 480px;
+	position: absolute;
+	top: 100px;
+	transform: translate(-50%, 0%);
+}
+
+#magmaBossContainer {
+	position: absolute;
+	top: 35vh;
+	left: 45vw;
+}
+
+#magmaBoss {
+	width: auto;
+	height: 480px;
+	position: absolute;
+	top: 100px;
+	transform: translate(-50%, 0%);
+}
+
+#steampunkBossContainer {
+	position: absolute;
+	top: 5vh;
+	left: 23vw;
+}
+
+#steampunkBoss {
+	width: auto;
+	height: 480px;
+	position: absolute;
+	top: 100px;
+	transform: translate(-50%, 0%);
 }
